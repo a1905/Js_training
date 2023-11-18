@@ -1,0 +1,162 @@
+* {
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  width: 400px;
+  height: 100%;
+}
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-wrapper,
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  width: 500px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  max-height: 100vh;
+}
+.sec-message-box,
+.message-box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 10px;
+
+  border: 1px solid rgb(0, 0, 0);
+  height: 70vh;
+  padding: 10px;
+  row-gap: 10px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: darkgrey lightgrey;
+}
+
+.sec-message-box::-webkit-scrollbar,
+.message-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sec-message-box::-webkit-scrollbar-track,
+.message-box::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  background-color: rgb(0, 81, 81);
+}
+
+.sec-message-box::-webkit-scrollbar-thumb,
+.message-box::-webkit-scrollbar-thumb {
+  background-color: yellowgreen;
+  border-radius: 10px;
+}
+.sec-btn,
+.btn {
+  border: none;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: white;
+}
+.sec-btn i,
+.btn i {
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 50%;
+  color: yellowgreen;
+}
+.sec-btn i:hover,
+.btn i:hover {
+  color: white;
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+.sec-input,
+.input {
+  border-color: yellowgreen;
+  width: 100%;
+  border-radius: 16px;
+  padding: 5px;
+}
+
+.sec-message,
+.message {
+  display: flex;
+
+  column-gap: 10px;
+  max-width: 100%;
+  border: 1px solid rgb(187, 176, 176);
+  border-radius: 10px;
+  padding: 4px;
+  margin: 4px;
+  word-wrap: break-word;
+}
+
+.sec-message i,
+.message i {
+  display: flex;
+  align-items: center;
+  color: yellowgreen;
+}
+
+.sec-send-messages,
+.send-messages {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  column-gap: 5px;
+}
+
+.sec-my-profile,
+.my-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  cursor: pointer;
+}
+.sec-my-profile .sec-profile-btn,
+.my-profile .profile-btn {
+  background-color: rgba(0, 0, 0, 0.566);
+  outline: none;
+  border: none;
+  padding: 8px;
+  width: 100px;
+  color: white;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.sec-my-profile .sec-profile-btn:hover,
+.my-profile .profile-btn:hover {
+  background-color: rgb(0, 0, 0);
+
+  color: white;
+}
+
+.sec-my-profile img,
+.my-profile img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
